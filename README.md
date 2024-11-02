@@ -1,18 +1,18 @@
-## Getting Started
+# Sistema de Gerenciamento de Academia
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é um sistema de gerenciamento de academia desenvolvido em Java, focado na prática dos conceitos de Orientação a Objetos, como encapsulamento, herança, polimorfismo e composição. O sistema permite o gerenciamento de membros, aulas e inscrições, além do registro de frequência dos membros nas aulas.
 
-## Folder Structure
+## Objetivo
 
-The workspace contains two folders by default, where:
+O objetivo deste sistema é proporcionar uma interface para que academias possam gerenciar seus membros, aulas disponíveis, inscrições e a frequência dos alunos, facilitando a administração e o acompanhamento do desempenho dos membros.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Funcionalidades
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **Cadastro de Membros:** Permite o registro de novos membros com informações essenciais.
+- **Cadastro de Aulas:** Registra as aulas disponíveis, incluindo instrutor e capacidade máxima.
+- **Inscrição em Aulas:** Os membros podem se inscrever em aulas, desde que tenham o pagamento em dia e haja vagas disponíveis.
+- **Registro de Frequência:** Permite registrar a presença dos membros nas aulas e listar as frequências registradas.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Diagrama de Classes
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+![Diagrama de Classes](Classe%20UML.png) 
