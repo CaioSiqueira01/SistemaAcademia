@@ -2,8 +2,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-// Outras classes (Membro, Aula, RegistroFrequencia, Academia) permanecem as mesmas
-
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -21,7 +19,7 @@ public class Main {
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // Limpa o buffer
+            scanner.nextLine(); 
 
             switch (opcao) {
                 case 1:
@@ -31,7 +29,7 @@ public class Main {
                     int idMembro = scanner.nextInt();
                     System.out.print("Pagamento em dia? (true/false): ");
                     boolean pagamentoEmDia = scanner.nextBoolean();
-                    scanner.nextLine(); // Limpa o buffer
+                    scanner.nextLine(); 
 
                     Membro membro = new Membro(nomeMembro, idMembro, pagamentoEmDia);
                     academia.adicionarMembro(membro);
@@ -45,7 +43,7 @@ public class Main {
                     String instrutor = scanner.nextLine();
                     System.out.print("Digite a capacidade máxima da aula: ");
                     int capacidadeMaxima = scanner.nextInt();
-                    scanner.nextLine(); // Limpa o buffer
+                    scanner.nextLine(); 
 
                     Aula aula = new Aula(nomeAula, instrutor, capacidadeMaxima);
                     academia.adicionarAula(aula);
@@ -54,7 +52,7 @@ public class Main {
 
                 case 3:
                     System.out.println("\nAulas Disponíveis:");
-                    for (Aula a : academia.getAulas()) { // Usando o getter getAulas()
+                    for (Aula a : academia.getAulas()) { 
                         System.out.println("- " + a.getNome() + " (Instrutor: " + a.getInstrutor() +
                                         ", Capacidade: " + a.getMembrosInscritos().size() + "/" +
                                         a.getCapacidadeMaxima() + ")");
@@ -64,7 +62,7 @@ public class Main {
                 case 4:
                     System.out.print("Digite o ID do membro: ");
                     int idParaInscricao = scanner.nextInt();
-                    scanner.nextLine(); // Limpa o buffer
+                    scanner.nextLine(); 
                     System.out.print("Digite o nome da aula: ");
                     String aulaParaInscricao = scanner.nextLine();
 
@@ -78,7 +76,7 @@ public class Main {
                 case 5:
                     System.out.print("Digite o ID do membro: ");
                     int idParaFrequencia = scanner.nextInt();
-                    scanner.nextLine(); // Limpa o buffer
+                    scanner.nextLine(); 
                     System.out.print("Digite o nome da aula: ");
                     String aulaParaFrequencia = scanner.nextLine();
 
